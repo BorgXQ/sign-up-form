@@ -20,43 +20,49 @@
             Let's do this!
         </div>
         <div class="align">
-            <form action="#" method="get">
+            <form action="#" method="get" id="form">
                 <div class="stoof">
                     <div class="leftStoof">
                         <div>
                             <label for="firstName">First Name</label>
-                            <input type="text" id="firstName">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <div id="errorFirstName" class="error"></div>
                         </div>
                         <div>
                             <label for="email">Email</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" name="email" required>
+                            <div id="errorEmail" class="error"></div>
                         </div>
                         <div>
                             <label for="pass">Password</label>
-                            <input type="password" id="pass">
+                            <input type="password" id="pass" name="pass" required>
+                            <div id="errorPass" class="error"></div>
                         </div>
                     </div>
                     <div class="rightStoof">
                         <div>
                             <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <div id="errorLastName" class="error"></div>
                         </div>
                         <div>
                             <label for="phoneNum">Phone Number</label>
-                            <input type="number" id="phoneNum">
+                            <input type="number" id="phoneNum" name="phoneNum" required>
+                            <div id="errorPhoneNum" class="error"></div>
                         </div>
                         <div>
                             <label for="confPass">Confirm Password</label>
-                            <input type="password" id="confPass">
+                            <input type="password" id="confPass" name="confPass" required>
+                            <div id="errorConfPass" class="error"></div>
                         </div>
                     </div>
                 </div>
                 
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
             </form>
         </div>
         <div class="logIn align">Already have an account? Log in</div>
     </div>
-    
+    <script defer src="script.js"></script>
 </body>
 </html>
